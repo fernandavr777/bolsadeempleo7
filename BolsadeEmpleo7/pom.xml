@@ -14,19 +14,9 @@
     <name>BolsaDeEmpleo7</name>
     <description>HolaMundo con Spring</description>
 
- <!--<properties>
+    <properties>
         <java.version>16</java.version>
-    </properties>    -->
-    
-     <properties>
-       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <java.version>16</java.version> 
-          
-        
-        
-    </properties>
+    </properties>  
     
 
     <dependencies>
@@ -114,12 +104,15 @@
     </dependencies>
 
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<executable>true</executable>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>
